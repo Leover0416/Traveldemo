@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>襄阳旅游攻略</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">襄阳旅游</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#attractions">景点</a></li>
+                <li><a href="#food">美食</a></li>
+                <li><a href="#tips">攻略</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>探索襄阳之美</h1>
+            <p>千年古城，三国故里，感受历史与现代的完美融合</p>
+            <button class="cta-button" onclick="scrollToSection('attractions')">开始探索</button>
+        </div>
+    </section>
+
+    <section id="attractions" class="section">
+        <h2>必游景点</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://picsum.photos/400/300" alt="襄阳古城">
+                <h3>襄阳古城</h3>
+                <p>中国历史文化名城，三国时期重要军事要塞</p>
+                <button class="card-button" onclick="showDetails('古城')">查看详情</button>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/400/300" alt="古隆中">
+                <h3>古隆中</h3>
+                <p>诸葛亮隐居地，三国文化发源地</p>
+                <button class="card-button" onclick="showDetails('古隆中')">查看详情</button>
+            </div>
+            <div class="card">
+                <img src="https://picsum.photos/400/300" alt="唐城">
+                <h3>唐城</h3>
+                <p>唐代建筑风格，展现盛唐文化</p>
+                <button class="card-button" onclick="showDetails('唐城')">查看详情</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="food" class="section">
+        <h2>特色美食</h2>
+        <div class="food-container">
+            <div class="food-item">
+                <img src="https://picsum.photos/300/200" alt="襄阳牛肉面">
+                <h3>襄阳牛肉面</h3>
+                <p>百年老字号，汤鲜味美</p>
+            </div>
+            <div class="food-item">
+                <img src="https://picsum.photos/300/200" alt="襄阳豆腐">
+                <h3>襄阳豆腐</h3>
+                <p>传统工艺，口感细腻</p>
+            </div>
+            <div class="food-item">
+                <img src="https://picsum.photos/300/200" alt="襄阳米酒">
+                <h3>襄阳米酒</h3>
+                <p>传统酿造，醇香四溢</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="section">
+        <h2>旅游攻略</h2>
+        <div class="tips-container">
+            <div class="tip-card">
+                <h3>最佳旅游时间</h3>
+                <p>春秋两季气候宜人，是游览襄阳的最佳时节</p>
+            </div>
+            <div class="tip-card">
+                <h3>交通建议</h3>
+                <p>市内公交便利，景点间可乘坐旅游专线</p>
+            </div>
+            <div class="tip-card">
+                <h3>住宿推荐</h3>
+                <p>建议住在古城附近，方便游览主要景点</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 襄阳旅游攻略. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
