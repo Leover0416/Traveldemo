@@ -1,15 +1,19 @@
 {
-    "version": 2,
-    "builds": [
+  "rewrites": [
+    {
+      "source": "/blog",
+      "destination": "/news"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
         {
-            "src": "index.html",
-            "use": "@vercel/static"
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
         }
-    ],
-    "routes": [
-        {
-            "src": "/",
-            "dest": "/index.html"
-        }
-    ]
+      ]
+    }
+  ]
 }
